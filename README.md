@@ -2,7 +2,7 @@
 
 This repository documents the development of a video game recommendation system. The project is organized into the following key stages:
 
-- [01_ETL](01_ETL.ipynbipynb): Initial data cleaning scripts.
+- [01_ETL](01_ETL.ipynb): Initial data cleaning scripts.
 
 - [02_EDA](02_EDA.ipynb): Exploratory data analysis notebooks.
 

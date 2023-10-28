@@ -2,18 +2,18 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Color palete
-back_color = "#0D1117" # github background color
-main_color = "#FFFFFF" # white
+white = "#FFFFFF"
+black = "#000000"
 
 sns.set_theme(style="whitegrid")
 
 # 
 def missing_values_heatmap(dataframe, title):
     # Create and configurate heatmap
-    sns.heatmap(data=dataframe.isnull().T, cbar=False, annot_kws={"color": "red"}, cmap=sns.color_palette([main_color, back_color]))
-    plt.gcf().set_facecolor("#0D1117") # Background
-    plt.title(f"{title} missing values", fontsize=10, loc='left', color=main_color) # Title
-    plt.yticks(fontsize=9, color=main_color) # Y axis
+    sns.heatmap(data=dataframe.isnull().T, cbar=False, annot_kws={"color": "red"}, cmap=sns.color_palette([black, white]))
+    #plt.gcf().set_facecolor(white) # Background
+    plt.title(f"{title} missing values", fontsize=10, loc='left', color=black) # Title
+    plt.yticks(fontsize=9, color=black) # Y axis
     plt.xticks([]) # X axis
     # Save and show
     plt.savefig(f"gallery/{title}.png", format='png', dpi=300, bbox_inches='tight')
@@ -25,14 +25,14 @@ def histogram(column, title):
     plt.figure(figsize=(10, 6))
     plt.gcf().set_facecolor("#0D1117") # Background
     plt.gca().set_facecolor("#0D1117") # Background
-    plt.hist(column, bins=len(column.value_counts()), color=main_color, edgecolor=back_color)
+    plt.hist(column, bins=len(column.value_counts()), color=black, edgecolor=white)
     # Title
-    plt.title(title, fontsize=10, loc='right', color=main_color)
+    plt.title(title, fontsize=10, loc='right', color=black)
     # X axis
-    plt.xticks(fontsize=9, color=main_color) 
+    plt.xticks(fontsize=9, color=black) 
     plt.xlabel('')
     # Y axis
-    plt.yticks(fontsize=9, color=main_color)
+    plt.yticks(fontsize=9, color=black)
     plt.ylabel('')
     # Grid
     ax = plt.gca()
@@ -52,14 +52,14 @@ def barplot(data, title):
     plt.figure(figsize=(10, 6))
     plt.gcf().set_facecolor("#0D1117") # Background
     plt.gca().set_facecolor("#0D1117") # Background
-    data.plot(kind='bar', color=main_color, edgecolor=back_color)
+    data.plot(kind='bar', color=white, edgecolor=white)
     # Title
-    plt.title(title, fontsize=10, loc='right', color=main_color)
+    plt.title(title, fontsize=10, loc='right', color=black)
     # X axis
-    plt.xticks(fontsize=9, color=main_color) 
+    plt.xticks(fontsize=9, color=black) 
     plt.xlabel('')
     # Y axis
-    plt.yticks(fontsize=9, color=main_color)
+    plt.yticks(fontsize=9, color=black)
     plt.ylabel('')
     # Grid
     ax = plt.gca()
