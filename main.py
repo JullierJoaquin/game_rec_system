@@ -1,27 +1,25 @@
+import ast
 import fastapi
 import numpy as np
 import pandas as pd
 import pyarrow.parquet as pq
-
-import ast
-import numpy as np
-import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
-
 
 vectorizer = TfidfVectorizer()
 app = fastapi.FastAPI()
 
-
 model_data = pd.read_csv("data/model_data.csv", index_col=0, parse_dates=["date"])
+model_data['popular_genres'].fillna('', inplace=True)
+model_data['common_genres'].fillna('', inplace=True)
+model_data['unpopular_genres'].fillna('', inplace=True)
 
 @app.get("/")
 def test():
     return {"API STEAM GAMES ACTIVE"}
 
 
-@app.get("/{title}")
+@app.get("/recommend/{title}")
 def recommend_similar_games(title):
 
     # Encuentra el índice del juego ingresado
@@ -54,7 +52,6 @@ def recommend_similar_games(title):
     # Combine the similarity matrices for the three genre categories
     similarity_matrix = popular_genres_similarity_matrix + common_genres_similarity_matrix + unpopular_genres_similarity_matrix
 
-    
     # Adjust the game indices for the filtered_data
     similar_game_indices = similarity_matrix[new_game_index].argsort()[::-1][1:6]
 
@@ -63,10 +60,6 @@ def recommend_similar_games(title):
     similar_game_titles = filtered_data.iloc[similar_game_indices]['title'].tolist()
 
     # Create a DataFrame with titles and similarity scores
-    similar_games_dict = {'combined_score': similar_game_scores.tolist(), 'title': similar_game_titles}
+    similar_games_dict = {'recommendations': similar_game_titles}
 
     return similar_games_dict
-
-
-def test():
-    return {"API STEAM GAMES ACTIVE"}
