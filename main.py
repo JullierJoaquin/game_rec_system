@@ -13,7 +13,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 vectorizer = TfidfVectorizer()
 app = fastapi.FastAPI()
 
-model_data = pd.read_csv("data/model_data.csv", index_col=0)
+
+model_data = pd.read_csv("data/model_data.csv", index_col=0, parse_dates=["date"])
 
 @app.get("/")
 def test():
