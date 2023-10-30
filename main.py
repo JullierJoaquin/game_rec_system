@@ -10,11 +10,18 @@ vectorizer = TfidfVectorizer()
 app = fastapi.FastAPI()
 
 steam_games = pd.read_csv("data/steam_games.csv", index_col=0, parse_dates=["date"])
+steam_games["genres"] = steam_games["genres"].fillna("[]")
+steam_games['genres'] = steam_games['genres'].apply(eval)
+
+users_items = pq.read_table('data/users_items.parquet')
+users_items = users_items.to_pandas()
+users_reviews = pq.read_table('data/users_reviews.parquet')
+users_reviews = users_reviews.to_pandas()
+
 model_data = pd.read_csv("data/model_data.csv", index_col=0, parse_dates=["date"])
 model_data['popular_genres'].fillna('', inplace=True)
 model_data['common_genres'].fillna('', inplace=True)
 model_data['unpopular_genres'].fillna('', inplace=True)
-
 
 @app.get("/")
 def test():
