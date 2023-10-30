@@ -49,7 +49,7 @@ def developer(developer: str):
 
     result_dict = game_count_by_year_df.to_dict(orient="records")
 
-    return {"{developer}": result_dict}
+    return {developer: result_dict}
 
 
 @app.get("/userdata/{user_id}")
