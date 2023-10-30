@@ -6,6 +6,7 @@ import pyarrow.parquet as pq
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+
 vectorizer = TfidfVectorizer()
 app = fastapi.FastAPI()
 
@@ -23,13 +24,14 @@ model_data['popular_genres'].fillna('', inplace=True)
 model_data['common_genres'].fillna('', inplace=True)
 model_data['unpopular_genres'].fillna('', inplace=True)
 
+
 @app.get("/")
 def test():
     return {"API STEAM GAMES ACTIVE"}
 
 
 @app.get("/developer/{developer}")
-def developer(developer):
+def developer(developer: str):
 
     developer_data = steam_games[steam_games["developer"] == developer]
 
@@ -46,7 +48,8 @@ def developer(developer):
     game_count_by_year_df.drop(columns="free_item_count", inplace=True)
 
     result_dict = game_count_by_year_df.to_dict(orient="records")
-    return result_dict
+
+    return {"{developer}": result_dict}
 
 
 @app.get("/userdata/{user_id}")
