@@ -2,31 +2,33 @@
 
 This repository documents the development of a video game recommendation system. The project is organized into the following key stages:
 
-- [01_ETL](01_ETL.ipynb): Initial data cleaning scripts.
+[01_ETL](01_ETL.ipynb): Initial data cleaning and exploration.
 
-- [02_EDA](02_EDA.ipynb): Exploratory data analysis notebooks.
+[02_EDA](02_EDA.ipynb): Exploratory data analysis.
 
-- [03_ML](03_ML.ipynb): Data preparation and recommendation system implementation.
+[03_ML](03_ML.ipynb): Data preparation and recommendation system implementation.
 
-- [04_API](04_API.ipynb): Deployment for the recommendation system and other useful information.
-
-
-#### 01_ETL:
-
-This stage involves the data initial exploration and transformation.
+[04_API](04_API.ipynb): Deployment for the recommendation system and other useful information.
 
 
-#### 02_EDA:
+#### [01_ETL:](01_ETL.ipynb) Initial data cleaning and exploration.
 
-Exploration of the data to identify patterns and understand the characteristics of the video game dataset.
-
-
-#### 03_ML:
-
-Prepare the data for machine learning and developing the recommendation system.
+This stage involves the data initial exploration and transformation of the three main datasets:
+steam_games, australian_users_reviews, and australian_users_items, for subsequent analysis and the development of recommendation systems.
 
 
-#### 04_API:
+#### [02_EDA:](02_EDA.ipynb) Exploratory data analysis.
+
+I perform a Exploratory Data Analysis (EDA) to gain deeper insights into the transformed data. I reduce the analysis process to the few variables I decide to use in the recomendation system model. EDA helps me identify patterns, outliers, and potential relationships that will inform the recommendation system's design and customization.
+
+
+#### [03_ML:](03_ML.ipynb) Data preparation and recommendation system implementation.
+
+Prepare the data for machine learning and developing an Item-to-Item Recommendation System.
+The recommendation system suggests games similar to a given game based on genre similarities, using TF-IDF Vectorization and cosine similarity to create similarity matrices for games with respect to popular, common, and unpopular genres after filtrating the games by score, price, and year.
+
+
+#### [04_API:](04_API.ipynb) Deployment for the recommendation system and other useful information.
 
 Using the FastAPI framework this [API](https://pi-ml-ops-iviw.onrender.com/) provides various endpoints to access and retrieve information related to Steam games and user reviews and to the recommendation system trough the following endpoins:
 
@@ -41,6 +43,18 @@ Using the FastAPI framework this [API](https://pi-ml-ops-iviw.onrender.com/) pro
 [GET /developer_reviews_analysis/{developer}](https://pi-ml-ops-iviw.onrender.com/developer_reviews_analysis/Ubisoft): Returns the positive and negative sentiment count for a given developer.
 
 [GET /recommend_game/{game_id}](https://pi-ml-ops-iviw.onrender.com/recommend_game/10): Returns a list of 5 similar games for a given game id.
+
+
+#### Libraries and tools
+
+- Python: Primary programming language for data preprocessing, analysis, and modeling.
+- Jupyter Notebook: Interactive environment for running Python code.
+- Pandas: Data manipulation and analysis.
+- FastAPI: Web framework for building RESTful APIs.
+- NumPy: Python library for numerical operations and array handling.
+- scikit-learn: Machine learning Python library.
+- Matplotlib and Seaborn: Data visualization
+- Git: Tracking changes in the codebase and collaborating with others.
 
 
 #### Files
