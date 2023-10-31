@@ -21,12 +21,13 @@ steam_games, australian_users_reviews, and australian_users_items, for subsequen
 
 I perform a Exploratory Data Analysis (EDA) to gain deeper insights into the transformed data. I reduce the analysis process to the few variables I decide to use in the recomendation system model. EDA helps me identify patterns, outliers, and potential relationships that will inform the recommendation system's design and customization.
 
+![EDA.gif](/gallery/EDA/eda_gif.gif)
+
 
 #### [03_ML:](03_ML.ipynb) Data preparation and recommendation system implementation.
 
 Prepare the data for machine learning and developing an Item-to-Item Recommendation System.
 The recommendation system suggests games similar to a given game based on genre similarities, using TF-IDF Vectorization and cosine similarity to create similarity matrices for games with respect to popular, common, and unpopular genres after filtrating the games by score, price, and year.
-
 
 #### [04_API:](04_API.ipynb) Deployment for the recommendation system and other useful information.
 

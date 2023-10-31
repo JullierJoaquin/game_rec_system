@@ -1,0 +1,339 @@
+,genre,playtime
+0,1980s,24223605
+1,1990's,29204792
+2,2.5D,16223382
+3,2D,544486703
+4,2D Fighter,19546016
+5,360 Video,510
+6,3D Platformer,6434456
+7,3D Vision,67368529
+8,4 Player Local,79117607
+9,4X,133381627
+10,6DOF,150536
+11,Abstract,2740048
+12,Action,4191461671
+13,Action RPG,424629836
+14,Action-Adventure,45009040
+15,Adventure,2680210628
+16,Agriculture,10712529
+17,Aliens,101047192
+18,Alternate History,33420488
+19,America,27209473
+20,Animation & Modeling,451874654
+21,Anime,124390357
+22,Arcade,112777572
+23,Arena Shooter,28547909
+24,Artificial Intelligence,2187729
+25,Assassin,60974486
+26,Asynchronous Multiplayer,1364072
+27,Atmospheric,1480481616
+28,Audio Production,701159
+29,Base Building,134516185
+30,Based On A Novel,24775394
+31,Basketball,3904236
+32,Batman,19037505
+33,Beat 'em up,60562390
+34,Benchmark,3863065
+35,Blood,25673306
+36,Board Game,16628809
+37,Bowling,281432
+38,Building,917996694
+39,Bullet Hell,49586350
+40,Bullet Time,11548523
+41,CRPG,9711408
+42,Capitalism,26784598
+43,Card Game,18179498
+44,Cartoon,29616404
+45,Cartoony,17979109
+46,Casual,547001877
+47,Character Action Game,4445678
+48,Character Customization,278746118
+49,Chess,2521093
+50,Choices Matter,49392509
+51,Choose Your Own Adventure,12631562
+52,Cinematic,43697854
+53,City Builder,60252165
+54,Class-Based,88835555
+55,Classic,337537905
+56,Clicker,56773768
+57,Co-op,3498848529
+58,Co-op Campaign,13655032
+59,Cold War,19000376
+60,Colorful,32858661
+61,Comedy,974507950
+62,Comic Book,32427768
+63,Competitive,1128477652
+64,Conspiracy,13949832
+65,Controller,195030920
+66,Conversation,1958642
+67,Crafting,511612582
+68,Crime,241131943
+69,Crowdfunded,9338663
+70,Cult Classic,16516659
+71,Cute,82087413
+72,Cyberpunk,154507192
+73,Cycling,119361
+74,Dark,134307994
+75,Dark Comedy,717726
+76,Dark Fantasy,93227527
+77,Dark Humor,131124422
+78,Dating Sim,25983454
+79,Demons,6202139
+80,Design & Illustration,4330506
+81,Destruction,66440857
+82,Detective,20357775
+83,Difficult,1337090179
+84,Dinosaurs,44509361
+85,Diplomacy,116922948
+86,Documentary,678903
+87,Dragons,63852198
+88,Drama,7206674
+89,Driving,53710751
+90,Dungeon Crawler,107450691
+91,Dynamic Narration,4223613
+92,Dystopian,52188758
+93,Early Access,161089206
+94,Economy,138484186
+95,Education,153287488
+96,Episodic,19436389
+97,Experience,117774
+98,Experimental,2269713
+99,Exploration,495091970
+100,FMV,3589114
+101,FPS,2832382903
+102,Family Friendly,272962270
+103,Fantasy,402872129
+104,Fast-Paced,901751518
+105,Feature Film,2586
+106,Female Protagonist,225343627
+107,Fighting,63958350
+108,First-Person,2651548125
+109,Fishing,10182228
+110,Flight,54359488
+111,Football,37619767
+112,Foreign,1152
+113,Free to Play,715706141
+114,Funny,1244878829
+115,Futuristic,353087078
+116,Gambling,7268599
+117,Game Development,4534915
+118,GameMaker,11757703
+119,Games Workshop,27846615
+120,Gaming,28934
+121,God Game,13157220
+122,Golf,692843
+123,Gore,405812993
+124,Gothic,7553295
+125,Grand Strategy,192116929
+126,Great Soundtrack,1096501403
+127,Grid-Based Movement,1866470
+128,Gun Customization,120298327
+129,Hack and Slash,327686207
+130,Hacking,20771553
+131,Hand-drawn,3493338
+132,Hardware,363
+133,Heist,121514779
+134,Hex Grid,90775778
+135,Hidden Object,1697739
+136,Historical,392559794
+137,Horror,472902744
+138,Horses,51061676
+139,Hunting,24374561
+140,Illuminati,56804678
+141,Indie,1639769191
+142,Intentionally Awkward Controls,2907021
+143,Interactive Fiction,2146268
+144,Inventory Management,6974999
+145,Investigation,2265229
+146,Isometric,71928533
+147,JRPG,36884984
+148,Kickstarter,20982657
+149,LEGO,8593057
+150,Lara Croft,6867113
+151,Lemmings,32581
+152,Level Editor,26860868
+153,Linear,46698638
+154,Local Co-Op,329202886
+155,Local Multiplayer,149087553
+156,Loot,143673330
+157,Lore-Rich,36620776
+158,Lovecraftian,7056378
+159,MMORPG,234466539
+160,MOBA,38893444
+161,Magic,83678961
+162,Management,109208094
+163,Mars,3205244
+164,Martial Arts,9635398
+165,Massively Multiplayer,1231723965
+166,Match 3,4545139
+167,Mature,127040753
+168,Mechs,22631652
+169,Medieval,198303432
+170,Memes,151235463
+171,Metroidvania,20853660
+172,Military,1315892777
+173,Mini Golf,905472
+174,Minimalist,5999014
+175,Mining,692140
+176,Mod,479757880
+177,Moddable,2116096506
+178,Modern,51348391
+179,Mouse only,3778595
+180,Movie,562133
+181,Multiplayer,3977633362
+182,Multiple Endings,37141317
+183,Music,21337792
+184,Music-Based Procedural Generation,2997066
+185,Mystery,16128011
+186,Mystery Dungeon,10001
+187,Mythology,15096875
+188,NSFW,1638693
+189,Narration,6745933
+190,Naval,27825214
+191,Ninja,149757371
+192,Noir,8738615
+193,Nonlinear,5770715
+194,Nudity,196602529
+195,Offroad,4061953
+196,On-Rails Shooter,299522
+197,Online Co-Op,2570244111
+198,Open World,1683034288
+199,Otome,698621
+200,Parkour,214265677
+201,Parody,18219221
+202,Party-Based RPG,18532144
+203,Perma Death,90807645
+204,Philisophical,2351193
+205,Photo Editing,115425
+206,Physics,554644824
+207,Pinball,257806
+208,Pirates,15102535
+209,Pixel Graphics,338847481
+210,Platformer,328245803
+211,Point & Click,61370696
+212,Political,42106697
+213,Politics,17818493
+214,Pool,195030
+215,Post-apocalyptic,463836939
+216,Procedural Generation,65696763
+217,Programming,2968804
+218,Psychedelic,5310341
+219,Psychological,6088893
+220,Psychological Horror,20823473
+221,Puzzle,149296576
+222,Puzzle-Platformer,6010922
+223,PvE,265288553
+224,PvP,1311868376
+225,Quick-Time Events,35075969
+226,RPG,1479862554
+227,RPGMaker,5605015
+228,RTS,228512740
+229,Racing,169742487
+230,Real Time Tactics,55152093
+231,Real-Time,86093956
+232,Real-Time with Pause,105576134
+233,Realistic,1097905959
+234,Relaxing,33939841
+235,Remake,64076365
+236,Replay Value,644808603
+237,Resource Management,54233688
+238,Retro,75455861
+239,Rhythm,10752822
+240,Robots,60734064
+241,Rogue-like,123586830
+242,Rogue-lite,80196755
+243,Romance,24027739
+244,Rome,27842563
+245,Runner,1441885
+246,Sailing,1421578
+247,Sandbox,1805969308
+248,Satire,35430795
+249,Sci-fi,879862283
+250,Science,54153306
+251,Score Attack,28805576
+252,Sexual Content,4659860
+253,Shoot 'Em Up,7374321
+254,Shooter,2923067834
+255,Short,38077217
+256,Side Scroller,69800303
+257,Silent Protagonist,22104781
+258,Simulation,1644257925
+259,Singleplayer,3202698506
+260,Sniper,7382933
+261,Soccer,36345157
+262,Software,6995048
+263,Software Training,826202
+264,Sokoban,94798
+265,Soundtrack,374919
+266,Space,366102833
+267,Space Sim,36496116
+268,Spectacle fighter,5743554
+269,Spelling,44947
+270,Split Screen,65130115
+271,Sports,78119622
+272,Star Wars,17511792
+273,Stealth,261254763
+274,Steam Machine,23073
+275,Steampunk,40963281
+276,Story Rich,501915398
+277,Strategy,2164676958
+278,Strategy RPG,2557875
+279,Stylized,87431114
+280,Superhero,42431976
+281,Supernatural,5298821
+282,Surreal,12100101
+283,Survival,1070241104
+284,Survival Horror,325875352
+285,Swordplay,25032634
+286,Tactical,1713084793
+287,Tactical RPG,4517962
+288,Tanks,81655713
+289,Team-Based,1562287370
+290,Text-Based,647174
+291,Third Person,855896367
+292,Third-Person Shooter,544258394
+293,Thriller,1657404
+294,Time Attack,7057997
+295,Time Manipulation,3107046
+296,Time Travel,14501628
+297,Top-Down,47852695
+298,Top-Down Shooter,9623730
+299,Touch-Friendly,152273237
+300,Tower Defense,68371789
+301,TrackIR,130694408
+302,Trading,794587759
+303,Trading Card Game,8771563
+304,Trains,5969689
+305,Transhumanism,3536227
+306,Turn-Based,227649580
+307,Turn-Based Combat,13889744
+308,Turn-Based Strategy,201889599
+309,Turn-Based Tactics,58997002
+310,Tutorial,11716
+311,Twin Stick Shooter,35203868
+312,Typing,650694
+313,Underground,19571
+314,Underwater,8940887
+315,Utilities,4948151
+316,VR,24760530
+317,Vampire,2024339
+318,Video Production,2556907
+319,Villain Protagonist,3058314
+320,Violent,47387880
+321,Visual Novel,15380771
+322,Voice Control,72941
+323,Voxel,37636410
+324,Walking Simulator,27379484
+325,War,1324146010
+326,Wargame,6605305
+327,Warhammer 40K,20573940
+328,Web Publishing,2793254
+329,Werewolves,2823285
+330,Western,38867639
+331,Word Game,133169
+332,World War I,4748938
+333,World War II,122449667
+334,Wrestling,294240
+335,Zombies,440430985
+336,[],5355
+337,e-sports,936691505
