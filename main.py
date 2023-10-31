@@ -87,10 +87,15 @@ def UserForGenre(genre: str):
     most_hours_player = df.iloc[0][["user_id"]][0]
 
     hours_by_year = genre_items.groupby(genre_items["date"].dt.year)["playtime_forever"].sum()
-    hours_by_year = [{"Año": year, "Horas": hours} for year, hours in hours_by_year.items()]
+    hours_by_year = pd.DataFrame(hours_by_year).reset_index()
+    hours_by_year.columns = ["year", "playtime"]
 
-    return {"Player with most hours played for " + genre: most_hours_player,
-        "Played hours": hours_by_year}
+    list = []
+    for i, row in hours_by_year.iterrows():
+        list.append({"Year": row["year"], "playtime": row["playtime"]})
+
+    return {"Top player": most_hours_player,
+        "Hours played by year": list}
 
 
 
@@ -125,7 +130,8 @@ def developer_reviews_analysis(developer: str):
     developer_reviews = developer_reviews[developer_reviews["developer"] == developer ]
     sentiment_count = developer_reviews["sentiment"].value_counts()
 
-    return {developer: [{"Negative": sentiment_count[0], "Positive": sentiment_count[2]}]}
+    return {developer: [f"Negative = {sentiment_count[0]}", f"Positive = {sentiment_count[2]}"]}
+
 
 
 
