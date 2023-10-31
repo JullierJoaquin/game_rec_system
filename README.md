@@ -20,19 +20,18 @@ steam_games, australian_users_reviews, and australian_users_items, for subsequen
 
 #### [02_EDA:](02_EDA.ipynb) Exploratory data analysis.
 
-I perform a Exploratory Data Analysis (EDA) to gain deeper insights into the transformed data. I reduce the analysis process to the few variables I decide to use in the recomendation system model. EDA helps me identify patterns, outliers, and potential relationships that will inform the recommendation system's design and customization.
+I perform an Exploratory Data Analysis (EDA) to gain deeper insights into the transformed data. I reduce the analysis process to the few variables I decide to use in the recommendation system model. EDA helps me identify patterns, outliers, and potential relationships that will inform the recommendation system's design and customization.
 
 ![EDA.gif](/gallery/EDA/eda_gif.gif)
 
 
 #### [03_ML:](03_ML.ipynb) Data preparation and recommendation system implementation.
 
-Prepare the data for machine learning and developing an Item-to-Item Recommendation System.
-The recommendation system suggests games similar to a given game based on genre similarities, using TF-IDF Vectorization and cosine similarity to create similarity matrices for games with respect to popular, common, and unpopular genres after filtrating the games by score, price, and year.
+Prepare the data for machine learning and develop an Item-to-Item Recommendation System. The recommendation system suggests games similar to a given game based on genre similarities, using TF-IDF Vectorization and cosine similarity to create similarity matrices for games with respect to popular, common, and unpopular genres after filtering the games by score, price, and year.
 
 #### [04_API:](04_API.ipynb) Deployment for the recommendation system and other useful information.
 
-Using the FastAPI framework this [API](https://pi-ml-ops-iviw.onrender.com/) provides various endpoints to access and retrieve information related to Steam games and user reviews and to the recommendation system trough the following endpoins:
+Using the FastAPI frameworkv this [API](https://pi-ml-ops-iviw.onrender.com/) provides various endpoints to access and retrieve information related to Steam games and user reviews and the recommendation system through the following endpoints:
 
 [GET /developer/{developer}](https://pi-ml-ops-iviw.onrender.com/developer/Valve): Returns the amount of items and free contet porcentage for a given developer.
 
@@ -63,11 +62,11 @@ Using the FastAPI framework this [API](https://pi-ml-ops-iviw.onrender.com/) pro
     
 The files include...
 
-- [data](data/): 
+- [data](data/): Here, you can find the unprocessed and processed data files.
 
-- [gallery](gallery/):
+- [gallery](gallery/): Here I store all the data visualizations in png format.
 
-- [lib](lib/:)
+- [lib](lib/:)  Here, I store some recurring visualizations and transformations.
 
 
 #### Contact
