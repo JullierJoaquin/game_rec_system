@@ -16,6 +16,7 @@ This repository documents the development of a video game recommendation system.
 This stage involves the data initial exploration and transformation of the three main datasets:
 steam_games, australian_users_reviews, and australian_users_items, for subsequent analysis and the development of recommendation systems.
 
+![ETL.jpg](/gallery/ETL/ETL.jpg)
 
 #### [02_EDA:](02_EDA.ipynb) Exploratory data analysis.
 
