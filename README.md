@@ -40,7 +40,7 @@ Using the FastAPI framework this [API](https://pi-ml-ops-iviw.onrender.com/) pro
 
 [GET /developer_reviews_analysis/{developer}](https://pi-ml-ops-iviw.onrender.com/developer_reviews_analysis/Ubisoft): Returns the positive and negative sentiment count for a given developer.
 
-[GET /recommend_game/{game_id}](https://pi-ml-ops-iviw.onrender.com/recommend_game/{10}): Returns a list of 5 similar games for a given game id.
+[GET /recommend_game/{game_id}](https://pi-ml-ops-iviw.onrender.com/recommend_game/10): Returns a list of 5 similar games for a given game id.
 
 
 #### Files
