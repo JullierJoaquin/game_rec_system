@@ -81,7 +81,7 @@ def userdata(user_id: str):
 
 
 @app.get("/userforgenre/{genre}") # Returns the user with the highest playtime and a list of accumulated playtime by year for a given genre 
-def UserForGenre(genre: str):
+def userforgenre(genre: str):
     # Filter data
     genre_items = users_items.merge(steam_games[["genres", "game_id", "date"]], on="game_id", how="left")
     genre_items["genres"] = genre_items["genres"].fillna("[]")
