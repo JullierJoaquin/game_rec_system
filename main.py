@@ -29,7 +29,7 @@ def test():
     return {"API STEAM GAMES ACTIVE"}
 
 
-"""@app.get("/developer/{developer}")
+@app.get("/developer/{developer}")
 def developer(developer: str):
 
     developer_data = steam_games[steam_games["developer"] == developer]
@@ -45,11 +45,13 @@ def developer(developer: str):
     game_count_by_year_df = pd.merge(game_count_by_year_df, free_game_count_by_year_df, on="year", how="left")    
     game_count_by_year_df["free_content"] = game_count_by_year_df["free_item_count"] * 100 / game_count_by_year_df["item_count"]
     game_count_by_year_df.drop(columns="free_item_count", inplace=True)
+    game_count_by_year_df["free_content"].fillna(0, inplace=True)
 
+    list = []
+    for i, row in game_count_by_year_df.iterrows():
+        list.append({"Year": row["year"], "Total items": row["item_count"], "Free content": row["free_content"]})
 
-    result_dict = game_count_by_year_df.to_dict(orient="records")
-
-    return {"result": result_dict}"""
+    return {"Developer": developer, "items:": list}
 
 
 @app.get("/userdata/{user_id}")
