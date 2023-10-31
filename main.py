@@ -33,7 +33,7 @@ def test():
                 "/user_for_genre/{genre}": "Action",
                 "/best_developer_year/{year}": 2010,
                 "/developer_reviews_analysis/{developer}": "Ubisoft",
-                "/recommend/{title}": "Counter-Strike"}}
+                "/recommend_game/{game_id}": 10}}
 
 
 
@@ -142,7 +142,7 @@ def developer_reviews_analysis(developer: str):
 
 
 
-@app.get("/recommend/{game_id}") # Returns a list of 5 games recommendations for a given game id
+@app.get("/recommend_game/{game_id}") # Returns a list of 5 games recommendations for a given game id
 def recommend_similar_games(game_id: int):
     # Find game index
     game_index = model_data[model_data['game_id'] == game_id].index[0]
