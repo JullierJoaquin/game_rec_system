@@ -47,22 +47,7 @@ Rare Genres: Genres that appear infrequently in the dataset.
 
 #### 3 - API Development: 
 
-Implement a RESTful API using the FastAPI framework to provide data access and specific queries. This API provides various endpoints to access and retrieve information related to Steam games and user reviews. It utilizes the FastAPI framework and offers the following functionalities:
 
-Playtime by Genre: (not implemented)
-GET /playtime_genre/{genre}: Returns the year with the most playtime for a given genre.
-
-User for Genre: (not implemented)
-GET /user_for_genre/{genre}: Retrieves the user with the highest playtime for a given genre and provides a list of accumulated playtime by year.
-
-Users' Top Recommendations:
-GET /users_recommend/{year}: Returns the top 3 games most recommended by users for a given year.
-
-Users' Least Recommendations:
-GET /users_not_recommend/{year}: Provides the top 3 games least recommended by users for a given year.
-
-Sentiment Analysis:
-GET /sentiment_analysis/{year}: Returns a breakdown of user review records categorized by sentiment (Negative, Neutral, Positive) for a specific year.
 
 
 #### 4 - Machine Learning Model:
