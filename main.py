@@ -125,7 +125,7 @@ def developer_reviews_analysis(developer: str):
     developer_reviews = developer_reviews[developer_reviews["developer"] == developer ]
     sentiment_count = developer_reviews["sentiment"].value_counts()
 
-    return {developer: [{"Negative": sentiment_count.get("Negative", 0), "Positive": sentiment_count.get("Positive", 0)}]}
+    return {developer: [{"Negative": sentiment_count[0], "Positive": sentiment_count[2]}]}
 
 
 
