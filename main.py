@@ -138,15 +138,14 @@ def developer_reviews_analysis(developer: str):
         return {"error": f"No records found for developer: {developer}"}
     # Calculate positive and negative sentiment and return
     sentiment_count = developer_reviews["sentiment"].value_counts()
-    return {"Negative": sentiment_count[0],
-            "Positive": sentiment_count[2]}
+    return {developer: [f"Negative = {sentiment_count[0]}",f"Positive = {sentiment_count[2]}"]}
 
 
 
-@app.get("/recommend/{title}") # Returns a list of 5 games recommendations for a given title 
-def recommend_similar_games(title):
+@app.get("/recommend/{game_id}") # Returns a list of 5 games recommendations for a given game id
+def recommend_similar_games(game_id: int):
     # Find game index
-    game_index = model_data[model_data['title'] == title].index[0]
+    game_index = model_data[model_data['game_id'] == game_id].index[0]
     # Filter games bases on date
     year = model_data["date"].dt.year[game_index]
     five_years_ago = year - 5
@@ -164,7 +163,7 @@ def recommend_similar_games(title):
     filtered_data = filtered_data[(filtered_data["score"] >= lower_score) & (filtered_data["score"] <= upper_score)]
     # Find new game index
     filtered_data = filtered_data.reset_index(drop=True)
-    new_game_index = filtered_data[filtered_data['title'] == title].index[0]
+    new_game_index = filtered_data[filtered_data['game_id'] == game_id].index[0]
     # Create similarity matrix based on popular genres for filtered_data
     popular_genres_matrix = vectorizer.fit_transform(filtered_data['popular_genres'])
     popular_genres_similarity_matrix = cosine_similarity(popular_genres_matrix, popular_genres_matrix)
