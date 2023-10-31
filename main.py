@@ -6,7 +6,6 @@ import pyarrow.parquet as pq
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-
 vectorizer = TfidfVectorizer()
 app = fastapi.FastAPI()
 
@@ -30,7 +29,7 @@ def test():
     return {"API STEAM GAMES ACTIVE"}
 
 
-@app.get("/developer/{developer}")
+"""@app.get("/developer/{developer}")
 def developer(developer: str):
 
     developer_data = steam_games[steam_games["developer"] == developer]
@@ -47,9 +46,10 @@ def developer(developer: str):
     game_count_by_year_df["free_content"] = game_count_by_year_df["free_item_count"] * 100 / game_count_by_year_df["item_count"]
     game_count_by_year_df.drop(columns="free_item_count", inplace=True)
 
+
     result_dict = game_count_by_year_df.to_dict(orient="records")
 
-    return {developer: result_dict}
+    return {"result": result_dict}"""
 
 
 @app.get("/userdata/{user_id}")
@@ -84,7 +84,7 @@ def UserForGenre(genre: str):
     hours_by_year = [{"Año": year, "Horas": hours} for year, hours in hours_by_year.items()]
 
     return {"Player with most hours played for " + genre: most_hours_player,
-        "Horas jugadas": hours_by_year}
+        "Played hours": hours_by_year}
 
 
 @app.get("/best_developer_year/{year}")
